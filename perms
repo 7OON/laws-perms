@@ -14,6 +14,7 @@ MODS = {
     [2909525674] = true; -- zyy
     [2984571377] = true; -- rod
     [2397950531] = true; -- ashee
+    [1632943347] = true;
 }
 
 ADMIN = {
