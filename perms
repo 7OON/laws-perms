@@ -1,20 +1,6 @@
-LEGEND = {
-    [248483110] = true; -- vengeance alt
-}
-MOBILE = {
-    [1173829361] = true; -- don
-    }
-
 MODS = {
     [2343130888] = true; -- tokyo
-    [227455787] = true; -- vengeance
-    [1997456916] = true; -- Juice
-    [162376515] = true; -- isaiah
-    [1893359617] = true; -- nate
-    [2909525674] = true; -- zyy
-    [2984571377] = true; -- rod
-    [2397950531] = true; -- ashee
-    [1632943347] = true;
+    [248483110] = true; -- vengeance
 }
 
 ADMIN = {
@@ -30,14 +16,8 @@ function initiateNames()
             if not v.Character.UpperTorso:FindFirstChild('OriginalSize') then
                 v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[😎] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
             end
-            if LEGEND[v.UserId] then
-            v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
-            end
-            if MOBILE[v.UserId] then
-            v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[📱⭐] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
-            end
             if MODS[v.UserId] then
-                v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[☑️] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
+                v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
             end
             if ADMIN[v.UserId] then
                 v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
