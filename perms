@@ -1,5 +1,5 @@
 LEGEND = {
-    [227455787] = true; -- vengeance alt
+    [248483110] = true; -- vengeance alt
 }
 MOBILE = {
     [1173829361] = true; -- don
@@ -7,7 +7,7 @@ MOBILE = {
 
 MODS = {
     [2343130888] = true; -- tokyo
-    [248483110] = true; -- vengeance
+    [227455787] = true; -- vengeance
     [1997456916] = true; -- Juice
     [162376515] = true; -- isaiah
     [1893359617] = true; -- nate
