@@ -37,7 +37,7 @@ function initiateNames()
             v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[📱⭐] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
             end
             if MODS[v.UserId] then
-                v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[☑️] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
+                v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
             end
             if ADMIN[v.UserId] then
                 v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
