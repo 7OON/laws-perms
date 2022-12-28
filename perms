@@ -1,11 +1,12 @@
 MODS = {
     [1889302210] = true; -- erika
     [109532438] = true; -- katsuu
+    [469081025] = true; vengeancee
 }
 
 ADMIN = {
     [0] = true; -- vengeance
-    [469081025] = true; -- crown emoji
+    [1] = true; -- crown emoji
 }
 
 --// Don't mess with anything below this
