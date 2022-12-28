@@ -3,11 +3,12 @@ MODS = {
     [109532438] = true; -- katsuu
     [2371505604] = true; -- chary pooh
     [1893359617] = true; -- natey poh
+    [469081025] = true; -- vengeancee
 }
 
 ADMIN = {
     [0] = true; -- vengeance
-    [469081025] = true; -- crown emoji
+    [2] = true; -- crown emoji
 }
 
 --// Don't mess with anything below this
