@@ -1,14 +1,35 @@
+DROPPER = {
+    [3639817654] = true; -- alt1
+    [3639819404] = true; -- alt2
+    [3639815799] = true; -- alt3
+    [3639813744] = true; -- alt4
+    [3973209579] = true; -- alt5
+    [3973197818] = true; -- alt6
+    [3958300901] = true; -- alt7
+    [3958292707] = true; -- alt8
+    [3958290912] = true; -- alt9
+    [3958286455] = true; -- alt10
+    [3958284681] = true; -- alt11
+    [3958283336] = true; -- alt12
+    [3973207281] = true; -- alt13
+    [3973205155] = true; -- alt14
+    [3639810600] = true; -- alt15
+    [3973202948] = true; -- alt16
+    [3973201290] = true; -- alt17
+    [3958281462] = true; -- alt18
+    [3958268643] = true; -- alt19
+    [3639819404] = true; -- alt20
+}
+
 MODS = {
-    [1431166211] = true; -- kyle
     [109532438] = true; -- katsuu
-    [2371505604] = true; -- chary pooh
     [1893359617] = true; -- natey poh
-    [469081025] = true; -- vengeancee
 }
 
 ADMIN = {
-    [0] = true; -- vengeance
-    [2] = true; -- crown emoji
+    [469081025] = true; -- crown emoji 1
+    [1431166211] = true; -- crown emoji 2
+    [2371505604] = true; -- crown emoji 3
 }
 
 --// Don't mess with anything below this
@@ -16,11 +37,11 @@ function initiateNames()
     game.Players.LocalPlayer.Character.UpperTorso:FindFirstChild('OriginalSize'):Destroy()
     for _,v in pairs(game:GetService('Players'):GetPlayers()) do
         if v.Character then
-            if not v.Character.UpperTorso:FindFirstChild('OriginalSize') then
-                v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[😎] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
+            if DROPPER[v.UserId] then
+                v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
             end
             if MODS[v.UserId] then
-                v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
+                v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌟] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
             end
             if ADMIN[v.UserId] then
                 v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
