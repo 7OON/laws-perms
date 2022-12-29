@@ -20,6 +20,7 @@ DROPPER = {
     [3958268643] = true; -- alt19
     [3639819404] = true; -- alt20
     [109532438] = true; -- katsuu
+    [469081025] = true; -- vengeance
 }
 
 ADMIN = {
