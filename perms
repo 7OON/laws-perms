@@ -1,4 +1,4 @@
-DROPPER = {
+DROPPERS = {
     [3639817654] = true; -- alt1
     [3639819404] = true; -- alt2
     [3639815799] = true; -- alt3
@@ -49,4 +49,4 @@ function initiateNames()
 end
 
 local successful, errored = pcall(initiateNames)
-return MODS
+return DROPPERS
