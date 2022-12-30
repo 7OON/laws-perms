@@ -20,13 +20,14 @@ DROPPERS = {
     [3958268643] = true; -- alt19
     [3639819404] = true; -- alt20
     [2702043996] = true; -- alt21
-    [109532438] = true; -- katsuu
 }
 
 ADMIN = {
     [469081025] = true; -- crown emoji 1
     [1431166211] = true; -- crown emoji 2
     [2371505604] = true; -- crown emoji 3
+    [1893359617] = true; -- crown emoji 4
+    [109532438] = true; -- crown emoji 5
 }
 
 --// Don't mess with anything below this
