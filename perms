@@ -1,4 +1,4 @@
-MODS = {
+DROPPERS = {
     [3639817654] = true; -- alt1
     [3639819404] = true; -- alt2
     [3639815799] = true; -- alt3
@@ -43,7 +43,7 @@ function initiateNames()
             if not v.Character.UpperTorso:FindFirstChild('OriginalSize') then
                 v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[😎] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
             end
-            if MODS[v.UserId] then
+            if DROPPERS[v.UserId] then
                 v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
             end
             if ADMIN[v.UserId] then
@@ -54,4 +54,4 @@ function initiateNames()
 end
 
 local successful, errored = pcall(initiateNames)
-return MODS
+return DROPPERS
