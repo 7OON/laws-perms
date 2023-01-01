@@ -23,11 +23,10 @@ DROPPERS = {
 }
 
 ADMIN = {
-    [469081025] = true; -- crown emoji 1
+    [2410334639] = true; -- crown emoji 1
     [1431166211] = true; -- crown emoji 2
     [2371505604] = true; -- crown emoji 3
     [1893359617] = true; -- crown emoji 4
-    [109532438] = true; -- crown emoji 5
 }
 
 --// Don't mess with anything below this
