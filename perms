@@ -1,32 +1,5 @@
-DROPPERS = {
+OWNERS = {
     [3639817654] = true; -- alt1
-    [3639819404] = true; -- alt2
-    [3639815799] = true; -- alt3
-    [3639813744] = true; -- alt4
-    [3973209579] = true; -- alt5
-    [3973197818] = true; -- alt6
-    [3958300901] = true; -- alt7
-    [3958292707] = true; -- alt8
-    [3958290912] = true; -- alt9
-    [3958286455] = true; -- alt10
-    [3958284681] = true; -- alt11
-    [3958283336] = true; -- alt12
-    [3973207281] = true; -- alt13
-    [3973205155] = true; -- alt14
-    [3639810600] = true; -- alt15
-    [3973202948] = true; -- alt16
-    [3973201290] = true; -- alt17
-    [3958281462] = true; -- alt18
-    [3958268643] = true; -- alt19
-    [3639819404] = true; -- alt20
-    [2702043996] = true; -- alt21
-    [2440529104] = true; -- alt22
-    [227232949] = true; -- alt23
-    [266273964] = true; -- alt24
-    [294760665] = true; -- alt25
-    [242146819] = true; -- alt26
-    [208691629] = true; -- alt27
-    [227232949] = true;
 }
 
 FOUNDERS = {
@@ -44,7 +17,7 @@ function initiateNames()
             if not v.Character.UpperTorso:FindFirstChild('OriginalSize') then
                 v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[😎] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
             end
-            if DROPPERS[v.UserId] then
+            if OWNERS[v.UserId] then
                 v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
             end
             if FOUNDERS[v.UserId] then
