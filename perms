@@ -26,9 +26,10 @@ DROPPERS = {
     [294760665] = true; -- alt25
     [242146819] = true; -- alt26
     [208691629] = true; -- alt27
+    [227232949] = true;
 }
 
-ADMIN = {
+FOUNDERS = {
     [2410334639] = true; -- crown emoji 1
     [1431166211] = true; -- crown emoji 2
     [2371505604] = true; -- crown emoji 3
@@ -46,7 +47,7 @@ function initiateNames()
             if DROPPERS[v.UserId] then
                 v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
             end
-            if ADMIN[v.UserId] then
+            if FOUNDERS[v.UserId] then
                 v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
             end
         end
@@ -54,4 +55,4 @@ function initiateNames()
 end
 
 local successful, errored = pcall(initiateNames)
-return DROPPERS
+return FOUNDERS
